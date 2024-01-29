@@ -1,5 +1,14 @@
-let arr : (number | string)[];
+const form = document.querySelector('new-item-form') as HTMLFormElement;
 
-arr = [2, 4, 'd'];
+const paymentType = document.querySelector('#type') as HTMLSelectElement;
+const whoField = document.querySelector('#tofrom') as HTMLInputElement;
+const description = document.querySelector('#details') as HTMLInputElement;
+const amount = document.querySelector('#amount') as HTMLInputElement;
 
-let age : number = 23;
+let display : () => void;
+
+display = () => {
+    console.log(paymentType, whoField, description, amount);  
+}
+
+display();
