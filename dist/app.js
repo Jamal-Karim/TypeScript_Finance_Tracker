@@ -1,11 +1,12 @@
-"use strict";
+import { Invoice } from "./classes/invoice.js";
 const form = document.querySelector('new-item-form');
 const paymentType = document.querySelector('#type');
 const whoField = document.querySelector('#tofrom');
 const description = document.querySelector('#details');
 const amount = document.querySelector('#amount');
-let display;
-display = () => {
-    console.log(paymentType, whoField, description, amount);
-};
-display();
+const invOne = new Invoice('bob', 'work', 2);
+const invTwo = new Invoice('james', 'paint', 25);
+let invoices = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+console.log(invoices);
