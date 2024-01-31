@@ -12,6 +12,6 @@ export class Payment implements hasFormatter{
     }
 
     format() : string{
-       return `${this.recipient} owes ${this.details} for ${this.amount} dollars` 
+       return `${this.recipient} owed ${this.details} for ${this.amount} dollars` 
     }
 }
